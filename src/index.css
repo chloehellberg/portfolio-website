@@ -1,13 +1,81 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* margin: 0;
+  padding: 0; */
+  color: #266150;
+  font-size: 16px;
+  font-family: 'Abril Fatface', cursive;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #164A41, #4D774E);
+  
 }
-
+/* 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+h1, h2, h3, h4, h5, h6, p {
+  /* font-family: 'Lato', sans-serif; */
+  /* color: #266150; */
+  color: white;
+}
+
+select.form-control,
+textarea.form-control,
+input.form-control {
+  font-size: 1rem;
+}
+input[type=file] {
+  width: 100%;
+}
+
+
+
+/* Hexagon Stuffs */
+
+.hexagonB { 
+  width: 0;
+  border-bottom: 30px solid black;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hexagonM {
+  width: 104px;
+  height: 60px;
+  background-color: black;
+}
+.hexagonT{
+  width: 0;
+  border-top: 30px solid black;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+
+}
+.hex {
+  float: left;
+  margin-left: 3px;
+  margin-bottom: -26px;
+}
+.hex .top {
+  width: 0;
+  border-bottom: 30px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle {
+  width: 104px;
+  height: 60px;
+  background: #6C6;
+}
+.hex .bottom {
+  width: 0;
+  border-top: 30px solid #6C6;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex-row {
+  clear: left;
+}
+.hex-row.even {
+  margin-left: 53px;
 }
