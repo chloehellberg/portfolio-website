@@ -1,0 +1,54 @@
+@media all and (min-width: 480px) {
+  .Connect {
+    /* padding: 60px 0; */
+  }
+
+  .Connect form {
+    /* margin: 0; */
+    max-width: 320px;
+    display: block;
+    padding: 15px;
+  }
+
+  .connectTitle {
+    padding: 15px;
+  }
+
+  .connectAllContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+.inputBoxes {
+  /* background-image: linear-gradient(to right, #164A41, #4D774E); */
+  border-bottom-style: hidden;
+  border-color: black;
+  border-radius: 0px;
+}
+
+.messageInput {
+   /* background-image: linear-gradient(to right, #164A41, #4D774E); */
+   /* border-bottom-style: hidden; */
+   border-color: black;
+   border-radius: 0px; 
+}
+
+.submitBox {
+  /* background-image: linear-gradient(to right, #164A41, #4D774E); */
+  background-color: white;
+  border-top-style: hidden;
+  border-color: black;
+  border-radius: 0px;
+  color: gray;
+}
+
+.submitBox:hover {
+  background: white;
+  color: gray;
+  transform: translateY(3px);
+  border-color: black;
+  background-color: white;
+}

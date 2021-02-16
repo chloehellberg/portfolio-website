@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Routes from "./Routes";
-import Home from "./Home";
 import { LinkContainer } from "react-router-bootstrap";
 import  Nav  from "react-bootstrap/Nav";
 

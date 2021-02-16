@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   font-family: 'Abril Fatface', cursive;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(to right, #164A41, #4D774E);
+  /* background-image: linear-gradient(to right, #164A41, #4D774E); */
   
 }
 /* 
@@ -17,7 +17,8 @@ code {
 h1, h2, h3, h4, h5, h6, p {
   /* font-family: 'Lato', sans-serif; */
   /* color: #266150; */
-  color: white;
+  /* color: white; */
+  
 }
 
 select.form-control,
