@@ -33,7 +33,7 @@ input[type=file] {
 
 /* Hexagon Stuffs */
 
-.hexagonB { 
+/* .hexagonB { 
   width: 0;
   border-bottom: 30px solid black;
   border-left: 52px solid transparent;
@@ -49,27 +49,29 @@ input[type=file] {
   border-top: 30px solid black;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
+} */
 
-}
+
+
 .hex {
   float: left;
   margin-left: 3px;
   margin-bottom: -26px;
 }
-.hex .top {
+.hexTop {
   width: 0;
-  border-bottom: 30px solid #6C6;
+  border-bottom: 30px solid black;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }
-.hex .middle {
+.hexMiddle {
   width: 104px;
   height: 60px;
-  background: #6C6;
+  background: black;
 }
-.hex .bottom {
+.hexBottom {
   width: 0;
-  border-top: 30px solid #6C6;
+  border-top: 30px solid black;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }
