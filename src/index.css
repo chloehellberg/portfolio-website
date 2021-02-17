@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p {
   /* font-family: 'Lato', sans-serif; */
   /* color: #266150; */
   /* color: white; */
-  
+
 }
 
 select.form-control,
@@ -61,18 +61,19 @@ input[type=file] {
 }
 .hexTop {
   width: 0;
-  border-bottom: 30px solid black;
+  border-bottom: 30px solid blue;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }
 .hexMiddle {
   width: 104px;
   height: 60px;
-  background: black;
+  background: blue;
+  text-align: center;
 }
 .hexBottom {
   width: 0;
-  border-top: 30px solid black;
+  border-top: 30px solid blue;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
 }

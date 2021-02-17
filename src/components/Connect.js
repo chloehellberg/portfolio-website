@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Connect.css";
+import linkedIn from './../img/linkedIn.svg';
 
 
 export default function Connect() {
@@ -74,7 +75,27 @@ export default function Connect() {
         {renderForm()}
       </div>
       <div className="Contact">
-        
+      <div className="hex">
+          <div className="hexTop"></div>
+          <div className="hexMiddle">
+            {/* <img className="linkedIn" src={linkedIn} alt="LinkedIn" /> */}
+            <i class="fab fa-linkedin"></i>
+            <p>LinkedIn</p>
+          </div>
+          <div className="hexBottom"></div>
+          </div>
+        <div className="hex">
+          <div className="hexTop"></div>
+          <div className="hexMiddle"><br /><p>Twitter</p></div>
+          <div className="hexBottom"></div>
+        </div>
+        <div className=".hex-row">
+          <div className="hex">
+            <div className="hexTop"></div>
+            <div className="hexMiddle"><p>GitHub</p></div>
+            <div className="hexBottom"></div>
+          </div>
+        </div>
       </div>
     </div>
   )
