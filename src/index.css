@@ -1,7 +1,7 @@
 body {
   /* margin: 0;
   padding: 0; */
-  color: #266150;
+  /* color: #266150; */
   font-size: 16px;
   font-family: 'Abril Fatface', cursive;
   -webkit-font-smoothing: antialiased;
@@ -14,7 +14,7 @@ code {
     monospace;
 } */
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   /* font-family: 'Lato', sans-serif; */
   /* color: #266150; */
   /* color: white; */
@@ -31,25 +31,5 @@ input[type=file] {
 }
 
 
-
-/* Hexagon Stuffs */
-
-/* .hexagonB { 
-  width: 0;
-  border-bottom: 30px solid black;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-.hexagonM {
-  width: 104px;
-  height: 60px;
-  background-color: black;
-}
-.hexagonT{
-  width: 0;
-  border-top: 30px solid black;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-} */
 
 

@@ -22,9 +22,9 @@
   
 }
 
-.linkedIn {
+/* .linkedIn {
   color: #266150;
-}
+} */
 
 
 .inputBoxes {
@@ -88,4 +88,18 @@
 }
 .hex-row.even {
   margin-left: 53px;
+}
+
+
+a {
+  color: #266150;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4D774E;
+}
+
+.Icon {
+  background-size: 10rem 10rem
 }
