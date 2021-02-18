@@ -75,13 +75,13 @@ export default function Connect() {
         {renderForm()}
       </div>
       <div className="Contact">
-      <div className="hex">
+        <div className="hex">
           <div className="hexTop"></div>
           <div className="hexMiddle">
             <p><a href="https://www.linkedin.com/in/chloehellberg/"><Icon.Linkedin /><br />LinkedIn</a></p>
           </div>
           <div className="hexBottom"></div>
-          </div>
+        </div>
         <div className="hex">
           <div className="hexTop"></div>
           <div className="hexMiddle">
@@ -89,14 +89,28 @@ export default function Connect() {
           </div>
           <div className="hexBottom"></div>
         </div>
-        <div className=".hex-row">
-          <div className="hex">
-            <div className="hexTop"></div>
-            <div className="hexMiddle">
-              <p><a href="https://github.com/chloehellberg"><Icon.Github /><br />GitHub</a></p>
-            </div>
-            <div className="hexBottom"></div>
+        <div className="hex">
+          <div className="hexTop"></div>
+          <div className="hexMiddle">
+            <p><a href="https://github.com/chloehellberg"><Icon.Github /><br />GitHub</a></p>
           </div>
+          <div className="hexBottom"></div>
+        </div>
+        <div className="secondRow">
+        <div className="hex even hex-row">
+          <div className="hexTop"></div>
+          <div className="hexMiddle">
+            <p><a href="mailto:chloe.hellberg@gmail.com"><Icon.Envelope /><br />Email</a></p>
+          </div>
+          <div className="hexBottom"></div>
+        </div>
+        <div className="hex even">
+          <div className="hexTop"></div>
+          <div className="hexMiddle">
+            <p className="tree"><a href="https://github.com/chloehellberg"><Icon.TreeFill /><br /></a></p>
+          </div>
+          <div className="hexBottom"></div>
+        </div>
         </div>
       </div>
     </div>

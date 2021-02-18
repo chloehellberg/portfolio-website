@@ -90,6 +90,23 @@
   margin-left: 53px;
 }
 
+/* .hex.even .hexMiddle {
+  clear: left;
+}
+
+
+
+.secondRow.hexMiddle {
+  width: 110px;
+  height: 60px;
+  background: yellow;
+  text-align: center;
+} */
+
+.tree a {
+  font-size: 30px;
+}
+
 
 a {
   color: #266150;
