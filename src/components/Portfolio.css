@@ -1,10 +1,45 @@
-.mainPortfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+@media all and (min-width: 480px) {
+  /* .Portfolio { */
+    /* padding: 60px 0; */
+  /* } */
+
+  /* .portfolio { */
+    /* margin: 0; */
+    /* max-width: 320px; */
+    /* display: block; */
+    /* padding: 15px; */
+  /* } */
+
+  .mainPortfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+  }
+  
+  .card-img-top{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    /* border-color: black;
+    border-style: solid; */
+    /* align-items: center; 
+    justify-content: center;
+    display: flex; */
+  }
+
+  .card {
+    border-style: solid;
+    border-color: black;
+    border-width: medium;
+    border-radius: 0px;
+    margin: 10%;
+  }
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: 3fr 3fr;
-  grid-template-rows: 2fr 2fr;
-}
+
+
