@@ -1,15 +1,5 @@
 @media all and (min-width: 480px) {
-  /* .Portfolio { */
-    /* padding: 60px 0; */
-  /* } */
-
-  /* .portfolio { */
-    /* margin: 0; */
-    /* max-width: 320px; */
-    /* display: block; */
-    /* padding: 15px; */
-  /* } */
-
+ 
   .mainPortfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,6 +29,16 @@
     border-radius: 0px;
     margin: 10%;
   }
+
+  /* .projects:hover {
+    grid-template-columns: 50px 10vw 100px;
+    grid-template-rows: repeat(2, 50px);
+    background-color: red;
+    width: 500px;
+    height: 130px;
+    transition: 2s;
+  } */
+
 }
 
 
