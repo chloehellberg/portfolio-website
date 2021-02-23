@@ -7,19 +7,47 @@
 
   .projects {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-rows: 20rem;
+    grid-gap: 50px;
+    grid-auto-flow: dense;
+  }
+
+  .projects--full {
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px;
+    grid-gap: 10px;
+  }
+
+  .projects--big-columns {
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  .projects--big-gap {
+    grid-gap: 2.5rem;
+  }
+
+  .card--expanded {
+    grid-column: span 3;
+    grid-row: span 3;
+   /* .card-img {
+     transform: scale(1.03);
+   } */
   }
   
+  .button:hover {
+    background-color: hsla(0, 0%, 83%, 0.05);
+  }
+  button:focus {
+    box-shadow: 0 0 0 3px #7396e4;
+    outline: none;
+  }
+
   .card-img-top{
     width: 100%;
     height: 100%;
     border-radius: 0px;
-    /* border-color: black;
-    border-style: solid; */
-    /* align-items: center; 
-    justify-content: center;
-    display: flex; */
+    transition: transform 1s;
    } 
 
   .card {
@@ -32,18 +60,93 @@
 
   .square {
     opacity: 0;
-    /* width: 100%;
-    height: 4rem; */
     transform-origin: 0 0;
     cursor: pointer;
-    /* background-color: #272c34;
-    color: #fff; */
   }
-
-  
-
  } 
 
+
+
+
+
+
+/* layout */
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-auto-rows: 12rem;
+  grid-gap: 16px;
+  grid-auto-flow: dense;
+}
+
+.grid--big-columns {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.grid--big-gap {
+  grid-gap: 2.5rem;
+}
+
+
+
+.card--expanded {
+  grid-column: span 3;
+  grid-row: span 3;
+  .card__img {
+    transform: scale(1.03);
+  }
+}
+
+
+.card {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__img {
+  transition: transform 1s;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
+  animation-delay: 0.3s;
+} */
 
 
 

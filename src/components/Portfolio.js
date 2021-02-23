@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import "./Portfolio.css";
 import book from './../img/book.jpg';
@@ -10,10 +10,15 @@ import doggos from './../img/doggos.jpg';
 import alpaca from './../img/alpaca.jpg';
 import shapes from './../img/shapes.jpg';
 import { spring } from 'react-flip-toolkit';
+import styled from 'styled-components';
 
 export default function Portfolio() {
 
   const projectsRef = useRef(null);
+  const [cardSize, setCardSize] = useState(false);
+
+
+
   useEffect(() => {
     const squares = [...projectsRef.current.querySelectorAll(".square")];
     squares.forEach((el, i) => {
@@ -29,11 +34,23 @@ export default function Portfolio() {
         },
         delay: i * 100,
         onComplete: () => {
-          // add callback logic here if necessary
         }
       });
     });
   }, []);
+
+  function handleCardSize(event) {
+    if (cardSize === false) {
+      return console.log('HandleCardSizeFunc: ', false);
+    } else {
+      console.log('HandleCardSizeFunc: ', true);
+    }
+  }
+
+  const cardStyle = {
+    backgroundColor: cardSize ? "black" : "red",
+    // width: 1700 px,
+  }
 
   return (
     <div className="portfolio">
@@ -41,9 +58,9 @@ export default function Portfolio() {
         <h4>Resume Link</h4>
         <h4>GitHub Link</h4>
       </div>
-      <div className="projectTitle">
-        <h2>Projects</h2>
-      </div>
+      <div className="projectTitle"><h2>Projects</h2> </div>
+      
+      <div className={handleCardSize()} >
       <div className="projects" ref={projectsRef}>
         <div className="square">
           <div className="projectOne">
@@ -52,7 +69,6 @@ export default function Portfolio() {
                 <Card.Title>SUGGEST IT TO ME</Card.Title>
                 <Card.Text>ReactJS</Card.Text>
                 <Card.Img variant="top"src={book} alt="books" style={{ justifyContent: "center"}}  />
-
               </Card.Body>
             </Card>
           </div>
@@ -142,6 +158,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
