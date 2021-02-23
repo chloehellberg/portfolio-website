@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "./Portfolio.css";
 import book from './../img/book.jpg';
 import plants2 from './../img/plants2.jpg';
@@ -10,14 +10,13 @@ import doggos from './../img/doggos.jpg';
 import alpaca from './../img/alpaca.jpg';
 import shapes from './../img/shapes.jpg';
 import { spring } from 'react-flip-toolkit';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
 export default function Portfolio() {
 
   const projectsRef = useRef(null);
-  const [cardSize, setCardSize] = useState(false);
-
-
+  const [focus, setFocus] = useState(null);
+  const cardData = [...Array(4).keys()];
 
   useEffect(() => {
     const squares = [...projectsRef.current.querySelectorAll(".square")];
@@ -39,18 +38,32 @@ export default function Portfolio() {
     });
   }, []);
 
-  function handleCardSize(event) {
-    if (cardSize === false) {
-      return console.log('HandleCardSizeFunc: ', false);
-    } else {
-      console.log('HandleCardSizeFunc: ', true);
-    }
-  }
 
-  const cardStyle = {
-    backgroundColor: cardSize ? "black" : "red",
-    // width: 1700 px,
-  }
+  const onClick = index => {
+    setFocus(focus === index ? null : index);
+  };
+
+  const CardItem = ({ index, onClick }) => (
+    <div className="cardItem" onClick={() => onClick(index)}>
+      <div className="cardItemContent">
+        <div className="cardImage" />
+        <div className="cardBody">{cardData.map(i => <div key={i} />)}</div>
+      </div>
+    </div>
+  );
+  
+  const ExpandedCardItem = ({ index, onClick }) => (
+    <div className="expandedCardItem" onClick={() => onClick(index)}>
+      <div className="expandedCardItemContent">
+        <div className="cardImage cardImageExpanded" />
+        <div className="cardBody">{cardData.map(i => <div />)}</div>
+        <div className="additional-content">
+          {cardData.map(i => <div key={i} />)}
+        </div>
+      </div>
+    </div>
+  );
+
 
   return (
     <div className="portfolio">
@@ -60,7 +73,7 @@ export default function Portfolio() {
       </div>
       <div className="projectTitle"><h2>Projects</h2> </div>
       
-      <div className={handleCardSize()} >
+    
       <div className="projects" ref={projectsRef}>
         <div className="square">
           <div className="projectOne">
@@ -158,7 +171,6 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
