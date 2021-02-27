@@ -16,8 +16,8 @@ import { useSpring, animated } from "react-spring";
 export default function Portfolio() {
 
   const projectsRef = useRef(null);
-  const [focus, setFocus] = useState(null);
-  const cardData = [...Array(4).keys()];
+  // const [focus, setFocus] = useState(null);
+  // const cardData = [...Array(4).keys()];
 
   useEffect(() => {
     const squares = [...projectsRef.current.querySelectorAll(".square")];
@@ -42,35 +42,35 @@ export default function Portfolio() {
 
 
 
-  const onClick = index => {
-    setFocus(focus === index ? null : index);
-  };
+  // const onClick = index => {
+  //   setFocus(focus === index ? null : index);
+  // };
 
-  const CardItem = ({ index, onClick }) => (
-    <div className="square" onClick={() => onClick(index)}>
-      <Card>
-        <Card.Body>
-          <Card.Title />
-          <Card.Text />
-          <Card.Img />
-        </Card.Body>
-        <div className="cardImage" />
-        <div className="cardBody">{cardData.map(i => <div key={i} />)}</div>
-      </Card>
-    </div>
-  );
+  // const CardItem = ({ index, onClick }) => (
+  //   <div className="square" onClick={() => onClick(index)}>
+  //     <Card>
+  //       <Card.Body>
+  //         <Card.Title />
+  //         <Card.Text />
+  //         <Card.Img />
+  //       </Card.Body>
+  //       <div className="cardImage" />
+  //       <div className="cardBody">{cardData.map(i => <div key={i} />)}</div>
+  //     </Card>
+  //   </div>
+  // );
   
-  const ExpandedCardItem = ({ index, onClick }) => (
-    <div className="expandedCardItem" onClick={() => onClick(index)}>
-      <div className="expandedCardItemContent">
-        <div className="cardImage cardImageExpanded" />
-        <div className="cardBody">{cardData.map(i => <div />)}</div>
-        <div className="additional-content">
-          {cardData.map(i => <div key={i} />)}
-        </div>
-      </div>
-    </div>
-  );
+  // const ExpandedCardItem = ({ index, onClick }) => (
+  //   <div className="expandedCardItem" onClick={() => onClick(index)}>
+  //     <div className="expandedCardItemContent">
+  //       <div className="cardImage cardImageExpanded" />
+  //       <div className="cardBody">{cardData.map(i => <div />)}</div>
+  //       <div className="additional-content">
+  //         {cardData.map(i => <div key={i} />)}
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
 
   function PopoutProjectCard(props) {
     const calc = (x, y) => [-(y - window.innerHeight / 2) / 330, (x - window.innerWidth / 2) / 300, 1.1]
