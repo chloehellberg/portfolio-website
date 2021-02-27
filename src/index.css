@@ -42,51 +42,93 @@ input[type=file] {
   z-index: 99998;
   transition: 0.3s all;
   /* padding: 0px !important; */
-  padding: 30px;
+  padding: 18px;
+}
+
+
+.rightNavbar {
+  color: white !important;
 }
 
 .homeLink {
-  padding-right: 25px !important;
+  padding-right: 40px !important;
+  padding-top: 35px !important;
+  color: white;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+  text-decoration-color: #e4c287;
+  text-decoration-thickness: 2px;
+  /* text-decoration-style: dotted; */
+  text-decoration-style: wavy;
+  text-underline-offset: 0.4em;
+  /* text-decoration-skip: ink; */
+  /* transition-delay: 0.25s; */
+  /* transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: ease; */
 }
 .aboutLink {
-  padding-right: 25px !important;
+  padding-right: 40px !important;
+  padding-top: 35px !important;
+}
+.aboutLink:hover {
+  text-decoration: underline;
+  text-decoration-color: #e4c287;
+  text-decoration-thickness: 2px;
+  text-decoration-style: wavy;
+  text-underline-offset: 0.4em;
 }
 .portfolioLink {
-  padding-right: 25px !important;
+  padding-right: 40px !important;
+  padding-top: 35px !important;
+}
+.portfolioLink:hover {
+  text-decoration: underline;
+  text-decoration-color: #e4c287;
+  text-decoration-thickness: 2px;
+  text-decoration-style: wavy;
+  /* text-underline-offset: 0.4em; */
 }
 .connectLink {
   padding-right: 25px !important;
   color: white;
-}
-
-
-.hexConnect {
-  float: left;
-  margin-left: 3px;
-  margin-bottom: -26px;
-}
-.hexTopNav {
-  width: 0;
-  border-bottom: 25px solid black;
-  border-left: 47px solid transparent;
-  border-right: 47px solid transparent;
-}
-.hexMiddleNav {
-  width: 96px;
-  height: 55px;
-  background: black;
+  padding-top: 35px !important;
+  /* padding-bottom: -22px !important; */
+  /* padding-left: -8px !important; */
+  transform: rotate(20deg);
   text-align: center;
 }
-.hexBottomNav {
-  width: 0;
-  border-top: 25px solid black;
-  border-left: 47px solid transparent;
-  border-right: 47px solid transparent;
+
+/* .connectLink:hover {
+   transition: 0.1s;
+  transform: rotate(14deg); 
+  text-decoration: underline;
+  text-decoration-color: #164A41;
+  text-decoration-thickness: 2px;
+  text-decoration-style: wavy;
+} */
+
+.circle {
+  width: 87px;
+  height: 87px;
+  border-radius: 50%;
+  background-color: #A3BCB6;
+  padding-right: -20px !important;
+  padding-top: -20px;
+  /* white-space: nowrap; */
+}
+
+.circle:hover{
+  background-color: #e4c287;
 }
 
 
 
-/* .leftNavbar {
+
+/* 
+.leftNavbar {
   background-image: linear-gradient(to right, #164A41, #84b184, white);
   padding-left: 190px;
   margin-left: -200px;
@@ -99,7 +141,7 @@ input[type=file] {
 
 
 /* .navName {
-  background: linear-gradient( #A3BCB6 70%, #164A41 30%);
+  background: linear-gradient( #A3BCB6 70%, #e4c287 30%);
 } */
 
 /* .navbar-brand {

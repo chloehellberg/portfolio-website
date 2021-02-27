@@ -11,6 +11,7 @@ import alpaca from './../img/alpaca.jpg';
 import shapes from './../img/shapes.jpg';
 import { spring } from 'react-flip-toolkit';
 // import styled from 'styled-components';
+import { useSpring, animated } from "react-spring";
 
 export default function Portfolio() {
 
@@ -37,6 +38,8 @@ export default function Portfolio() {
       });
     });
   }, []);
+
+
 
 
   const onClick = index => {
@@ -69,6 +72,36 @@ export default function Portfolio() {
     </div>
   );
 
+  function PopoutProjectCard(props) {
+    const calc = (x, y) => [-(y - window.innerHeight / 2) / 330, (x - window.innerWidth / 2) / 300, 1.1]
+    const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+    
+    const [styles, setStyles] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+    return (
+      <animated.div
+        onMouseMove={({ clientX: x, clientY: y }) => setStyles({ xys: calc(x, y) })}
+        onMouseLeave={() => setStyles({ xys: [0, 0, 1] })}
+        style={{ transform: styles.xys.interpolate(trans) }}
+      >
+        {props.children}
+      </animated.div>
+    )
+  }
+
+  function FlipProjectCard(props) {
+    const [flipped, setFlipped] = useState(false)
+    const { transform, opacity } = useSpring({
+      opacity: flipped ? 1 : 0,
+      transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+      config: { mass: 5, tension: 500, friction: 80 }
+    })
+    return (
+      <div onClick={() => setFlipped(state => !state)}>
+        <animated.div className="cardFront" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>{props.children}</animated.div>
+        <animated.div className="cardBack" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}></animated.div>
+      </div>
+    )
+  }
 
   return (
     <div className="portfolio">
@@ -81,6 +114,8 @@ export default function Portfolio() {
     
       <div className="projects" ref={projectsRef}>
         <div className="square">
+          <PopoutProjectCard>
+          <FlipProjectCard>
           <div className="projectOne">
             <Card style={{ width: '17rem'}}>
               <Card.Body>
@@ -90,8 +125,12 @@ export default function Portfolio() {
               </Card.Body>
             </Card>
           </div>
+          </FlipProjectCard>
+          </PopoutProjectCard>
         </div>
         <div className="square">
+        <PopoutProjectCard>
+        <FlipProjectCard>
           <div className="projectTwo">
           <Card style={{ width: '17em' }}>
               <Card.Body>
@@ -102,8 +141,12 @@ export default function Portfolio() {
               </Card.Body>
             </Card>
           </div>
+          </FlipProjectCard>
+          </PopoutProjectCard>
         </div>
         <div className="square">
+        <PopoutProjectCard>
+        <FlipProjectCard>
           <div className="projectThree">
           <Card style={{ width: '17rem' }}>
               <Card.Body>
@@ -114,8 +157,12 @@ export default function Portfolio() {
               </Card.Body>
             </Card>
           </div>
+          </FlipProjectCard>
+          </PopoutProjectCard>
         </div>
         <div className="square">
+        <PopoutProjectCard>
+        <FlipProjectCard>
           <div className="projectFour">
           <Card style={{ width: '17rem' }}>
               <Card.Body>
@@ -126,8 +173,12 @@ export default function Portfolio() {
               </Card.Body>
             </Card>
           </div>
+          </FlipProjectCard>
+          </PopoutProjectCard>
         </div>
         <div className="square">
+        <PopoutProjectCard>
+        <FlipProjectCard>
           <div className="projectFive">
           <Card style={{ width: '17rem' }}>
               <Card.Body>
@@ -138,8 +189,12 @@ export default function Portfolio() {
               </Card.Body>
             </Card>
           </div>
+          </FlipProjectCard>
+          </PopoutProjectCard>
         </div>
         <div className="square">
+        <PopoutProjectCard>
+        <FlipProjectCard>
           <div className="projectSix">
           <Card style={{ width: '17rem' }}>
               <Card.Body>
@@ -150,8 +205,12 @@ export default function Portfolio() {
               </Card.Body>
             </Card>
           </div>
+          </FlipProjectCard>
+          </PopoutProjectCard>
         </div>
         <div className="square">
+        <PopoutProjectCard>
+        <FlipProjectCard>
           <div className="projectSeven">
           <Card style={{ width: '17rem' }}>
               <Card.Body>
@@ -162,8 +221,12 @@ export default function Portfolio() {
               </Card.Body>
             </Card>
           </div>
+          </FlipProjectCard>
+          </PopoutProjectCard>
         </div>
         <div className="square">
+        <PopoutProjectCard>
+        <FlipProjectCard>
           <div className="projectEight">
           <Card style={{ width: '17rem' }}>
               <Card.Body>
@@ -174,6 +237,8 @@ export default function Portfolio() {
               </Card.Body>
             </Card>
           </div>
+          </FlipProjectCard>
+          </PopoutProjectCard>
         </div>
       </div>
     </div>

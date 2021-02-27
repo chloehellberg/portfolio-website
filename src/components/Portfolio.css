@@ -1,4 +1,8 @@
 @media all and (min-width: 480px) {
+
+  .portfolio {
+    background: linear-gradient(90deg, #A3BCB6 30%, #164A41 30%);
+  }
  
   .mainPortfolio {
     display: grid;
@@ -29,6 +33,7 @@
     border-width: medium;
     border-radius: 0px;
     margin: 10%;
+    /* position: absolute; */
   }
 
   .square {
@@ -36,6 +41,12 @@
     transform-origin: 0 0;
     cursor: pointer;
   }
+
+  .cardBack {
+    background-image: url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i&auto=format&fit=crop);
+
+  }
+
 } 
 
 

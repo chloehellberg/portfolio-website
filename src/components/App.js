@@ -31,15 +31,11 @@ function App() {
             <LinkContainer to="/portfolio">
               <Nav.Link className="portfolioLink">PORTFOLIO</Nav.Link>
             </LinkContainer>
-
-
-            <LinkContainer to="/connect">
-            <div className="hexConnect">
-                <div className="hexTopNav"></div>
-              <Nav.Link className="connectLink hexMiddleNav">CONNECT</Nav.Link>
-                <div className="hexBottomNav"></div>
-              </div>
-            </LinkContainer>
+            <div className="circle">  
+              <LinkContainer to="/connect">
+                <Nav.Link className="connectLink">CONNECT</Nav.Link>
+              </LinkContainer>
+            </div>
           </Nav>
         </Navbar.Collapse>
         </div>

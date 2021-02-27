@@ -1,9 +1,10 @@
 @media all and (min-width: 480px) {
-  .Connect {
-    /* padding: 60px 0; */
-  }
+  /* .Connect {
+    padding: 60px 0;
+  
+  } */
 
-  .Connect form {
+  .ConnectForm form {
     /* margin: 0; */
     max-width: 320px;
     display: block;
@@ -14,11 +15,26 @@
     padding: 15px;
   }
 
-  .connectAllContainer {
+  .connectPageContainer {
+    background: linear-gradient(90deg, #A3BCB6 30%, #164A41 30%);
+
+  }
+
+  .connectAll {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr;
+    background: linear-gradient(90deg, #A3BCB6 30%, #164A41 30%);
   }
-  
+  .spaceBefore {
+    background: linear-gradient(90deg, #A3BCB6 30%, #164A41 30%);
+    height: 70px;
+  }
+
+  .spaceAfter {
+    background: linear-gradient(90deg, #A3BCB6 30%, #164A41 30%);
+    height: 396px;
+  }
   
 }
 

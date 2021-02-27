@@ -15,6 +15,7 @@
   .mainPhoto {
     width: 80%;
     border-bottom: 5px solid;
+    border-top: 5px solid;
     border-right: 5px solid;
   }
   .greeting {
@@ -47,7 +48,36 @@
   .homeProjectOne:hover {
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
   }
+  .homeProjectTwo {
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background-position: center center;
+    transition: box-shadow 0.5s;
+    will-change: transform;
+  }
   
+  .homeProjectTwo:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
+  .homeProjectThree {
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background-position: center center;
+    transition: box-shadow 0.5s;
+    will-change: transform;
+  }
+  
+  .homeProjectThree:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
+  .homeProjectFour {
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background-position: center center;
+    transition: box-shadow 0.5s;
+    will-change: transform;
+  }
+  
+  .homeProjectFour:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
 
   /* SEE PROJECTS / RESUME SECTION */
 

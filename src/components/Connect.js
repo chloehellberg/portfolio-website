@@ -69,50 +69,54 @@ export default function Connect() {
   }
 
   return (
-    <div className="connectAllContainer">
-      <div className="Connect">
-        <h3 className="connectTitle">GET IN TOUCH</h3>
-        {renderForm()}
+    <div className="connectPageContainer">
+      <div className="spaceBefore"></div>
+      <div className="connectAll">
+        <div className="ConnectForm">
+          <h3 className="connectTitle">GET IN TOUCH</h3>
+          {renderForm()}
+        </div>
+        <div className="Contact">
+          <div className="hex">
+            <div className="hexTop"></div>
+            <div className="hexMiddle">
+              <p><a href="https://www.linkedin.com/in/chloehellberg/"><Icon.Linkedin /><br />LinkedIn</a></p>
+            </div>
+            <div className="hexBottom"></div>
+          </div>
+          <div className="hex">
+            <div className="hexTop"></div>
+            <div className="hexMiddle">
+              <p><a href="https://twitter.com/ChloeHellberg"><Icon.Twitter /><br />Twitter</a></p>
+            </div>
+            <div className="hexBottom"></div>
+          </div>
+          <div className="hex">
+            <div className="hexTop"></div>
+            <div className="hexMiddle">
+              <p><a href="https://github.com/chloehellberg"><Icon.Github /><br />GitHub</a></p>
+            </div>
+            <div className="hexBottom"></div>
+          </div>
+          <div className="secondRow">
+          <div className="hex even hex-row">
+            <div className="hexTop"></div>
+            <div className="hexMiddle">
+              <p><a href="mailto:chloe.hellberg@gmail.com"><Icon.Envelope /><br />Email</a></p>
+            </div>
+            <div className="hexBottom"></div>
+          </div>
+          <div className="hex even">
+            <div className="hexTop"></div>
+            <div className="hexMiddle">
+              <p className="tree"><a href="https://github.com/chloehellberg"><Icon.TreeFill /><br /></a></p>
+            </div>
+            <div className="hexBottom"></div>
+          </div>
+          </div>
+        </div>
       </div>
-      <div className="Contact">
-        <div className="hex">
-          <div className="hexTop"></div>
-          <div className="hexMiddle">
-            <p><a href="https://www.linkedin.com/in/chloehellberg/"><Icon.Linkedin /><br />LinkedIn</a></p>
-          </div>
-          <div className="hexBottom"></div>
-        </div>
-        <div className="hex">
-          <div className="hexTop"></div>
-          <div className="hexMiddle">
-            <p><a href="https://twitter.com/ChloeHellberg"><Icon.Twitter /><br />Twitter</a></p>
-          </div>
-          <div className="hexBottom"></div>
-        </div>
-        <div className="hex">
-          <div className="hexTop"></div>
-          <div className="hexMiddle">
-            <p><a href="https://github.com/chloehellberg"><Icon.Github /><br />GitHub</a></p>
-          </div>
-          <div className="hexBottom"></div>
-        </div>
-        <div className="secondRow">
-        <div className="hex even hex-row">
-          <div className="hexTop"></div>
-          <div className="hexMiddle">
-            <p><a href="mailto:chloe.hellberg@gmail.com"><Icon.Envelope /><br />Email</a></p>
-          </div>
-          <div className="hexBottom"></div>
-        </div>
-        <div className="hex even">
-          <div className="hexTop"></div>
-          <div className="hexMiddle">
-            <p className="tree"><a href="https://github.com/chloehellberg"><Icon.TreeFill /><br /></a></p>
-          </div>
-          <div className="hexBottom"></div>
-        </div>
-        </div>
-      </div>
+      <div className="spaceAfter"></div>
     </div>
   )
 }
