@@ -1,6 +1,8 @@
+
+
 body {
-  /* margin: 0;
-  padding: 0; */
+   /* margin: 0; */
+  /* padding: 0;  */
   /* color: #266150; */
   font-size: 16px;
   font-family: 'Abril Fatface', cursive;
@@ -8,18 +10,7 @@ body {
   /* background-image: linear-gradient(to right, #164A41, #4D774E); */
   
 }
-/* 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
 
-h1, h2, h3, h4, h5, h6 {
-  /* font-family: 'Lato', sans-serif; */
-  /* color: #266150; */
-  /* color: white; */
-
-}
 
 select.form-control,
 textarea.form-control,
@@ -30,6 +21,94 @@ input[type=file] {
   width: 100%;
 }
 
+/* .appContainer {
+  background-color: #dfa8a4;
+  background: linear-gradient(90deg, #dfa8a4 30%, white 30%);
+  z-index: -2;
+} */
+
+
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* background: linear-gradient(270deg, #dfa8a4 70%, white 70%); */
+  background: linear-gradient(270deg, #164A41 70%, #A3BCB6 70%);
+  margin-bottom: 0px !important;
+  position: sticky;
+  top: 0;
+  /* opacity: 0.8; */
+  z-index: 99998;
+  transition: 0.3s all;
+  /* padding: 0px !important; */
+  padding: 30px;
+}
+
+.homeLink {
+  padding-right: 25px !important;
+}
+.aboutLink {
+  padding-right: 25px !important;
+}
+.portfolioLink {
+  padding-right: 25px !important;
+}
+.connectLink {
+  padding-right: 25px !important;
+  color: white;
+}
+
+
+.hexConnect {
+  float: left;
+  margin-left: 3px;
+  margin-bottom: -26px;
+}
+.hexTopNav {
+  width: 0;
+  border-bottom: 25px solid black;
+  border-left: 47px solid transparent;
+  border-right: 47px solid transparent;
+}
+.hexMiddleNav {
+  width: 96px;
+  height: 55px;
+  background: black;
+  text-align: center;
+}
+.hexBottomNav {
+  width: 0;
+  border-top: 25px solid black;
+  border-left: 47px solid transparent;
+  border-right: 47px solid transparent;
+}
+
+
+
+/* .leftNavbar {
+  background-image: linear-gradient(to right, #164A41, #84b184, white);
+  padding-left: 190px;
+  margin-left: -200px;
+  margin-top: -20px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+  padding-bottom: 20px;
+} */
+
+
+
+/* .navName {
+  background: linear-gradient( #A3BCB6 70%, #164A41 30%);
+} */
+
+/* .navbar-brand {
+  backgroun
+} */
+
+/* .grid {
+  background-color: red;
+} */
 
 
 

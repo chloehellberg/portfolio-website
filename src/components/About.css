@@ -1,0 +1,25 @@
+@media all and (min-width: 480px) {
+
+  .aboutPageVideo {
+
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .aboutContainer {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    box-sizing: border-box;
+    color : rgb(255, 255, 255);
+  } 
+
+  .addAboutSpace {
+    height: 200px;
+  } 
+
+}
+

@@ -1,0 +1,134 @@
+@media all and (min-width: 480px) {
+
+  .Home {
+    /* background: linear-gradient(90deg, #dfa8a4 30%, white 30%); */
+    /* background: linear-gradient(90deg, #A3BCB6 30%, #DADED4 30%); */
+    background: linear-gradient(90deg, #A3BCB6 30%, #164A41 30%);
+  }
+ 
+  .home-lander {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .mainPhoto {
+    width: 80%;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+  }
+  .greeting {
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom: 0px !important;
+  }
+
+
+  /* PROJECT CARDS */
+
+  .contentBeforeProjectGrid {
+    height: 70px;
+  }
+
+  .projectPreview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+  }
+
+  .homeProjectOne {
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background-position: center center;
+    transition: box-shadow 0.5s;
+    will-change: transform;
+  }
+  
+  .homeProjectOne:hover {
+    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  }
+  
+
+  /* SEE PROJECTS / RESUME SECTION */
+
+  .contentBeforeResumeGrid {
+    height: 70px;
+  }
+
+  .projectResumeLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* border: 2px solid; */
+    /* height: 20rem; */
+  }
+
+  .seeProjects {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+  }
+  .resume {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+  }
+
+  .homeProjectLink {
+    text-align: center;
+    margin-top: 20px;
+    /* white-space: nowrap; */
+  }
+
+  /* .Icon.ChevronRight {
+    viewBox: 
+  } */
+
+  .resumeLink {
+    text-align: center;
+    margin-top: 270px;
+    margin-bottom: 0px;
+    
+  }
+
+
+
+
+
+
+
+
+  .homeFooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    background: linear-gradient(270deg, #164A41 70%, #A3BCB6 70%);
+    /* background-color:#164A41; */
+    /* opacity: 0.8; */
+    height: 110px;
+  }
+
+  .contentBeforeFooterGrid {
+    height: 80px;
+  }
+
+  .linked {
+    font-size: 20px;
+  }
+  .github {
+    font-size: 20px;
+  }
+
+  .contactInfoAll {
+    margin-top: 70px;
+    padding-left: 20px;
+  }
+
+  .copyrightName {
+    text-align: right;
+    margin-top: 70px;
+    padding-right: 20px;
+  }
+
+
+}

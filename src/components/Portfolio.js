@@ -44,11 +44,16 @@ export default function Portfolio() {
   };
 
   const CardItem = ({ index, onClick }) => (
-    <div className="cardItem" onClick={() => onClick(index)}>
-      <div className="cardItemContent">
+    <div className="square" onClick={() => onClick(index)}>
+      <Card>
+        <Card.Body>
+          <Card.Title />
+          <Card.Text />
+          <Card.Img />
+        </Card.Body>
         <div className="cardImage" />
         <div className="cardBody">{cardData.map(i => <div key={i} />)}</div>
-      </div>
+      </Card>
     </div>
   );
   

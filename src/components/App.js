@@ -7,29 +7,42 @@ import  Nav  from "react-bootstrap/Nav";
 function App() {
   return (
     <div className="appContainer">
-      <Navbar collapseOnSelect expand="md" className="mb-3">
+      
+      <Navbar collapseOnSelect expand="lg" className="mb-3 ">
         <LinkContainer to="/">
+        <div className="leftNavbar">
           <Navbar.Brand href="/" className = "font-weight-bold">
-            <h1>CHLOE HELLBERG</h1>
+            <div className="navName">
+              <h1>CHLOE HELLBERG</h1>
+            </div>
           </Navbar.Brand>
+        </div>
         </LinkContainer>
         <Navbar.Toggle />
+        <div className="rightNavbar">
         <Navbar.Collapse className="justify-content-end">
           <Nav activeKey={window.location.pathname}>
             <LinkContainer to="/">
-              <Nav.Link>Home</Nav.Link>
+              <Nav.Link className='homeLink'>HOME</Nav.Link>
             </LinkContainer>
             <LinkContainer to="about">
-              <Nav.Link>About</Nav.Link>
+              <Nav.Link className='aboutLink'>ABOUT</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/portfolio">
-              <Nav.Link>Portfolio</Nav.Link>
+              <Nav.Link className="portfolioLink">PORTFOLIO</Nav.Link>
             </LinkContainer>
+
+
             <LinkContainer to="/connect">
-              <Nav.Link>Connect</Nav.Link>
+            <div className="hexConnect">
+                <div className="hexTopNav"></div>
+              <Nav.Link className="connectLink hexMiddleNav">CONNECT</Nav.Link>
+                <div className="hexBottomNav"></div>
+              </div>
             </LinkContainer>
           </Nav>
         </Navbar.Collapse>
+        </div>
       </Navbar>
       <Routes />
     </div>
