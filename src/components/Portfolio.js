@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Card } from "react-bootstrap";
 import "./Portfolio.css";
 import book from "./../img/book.jpg";
@@ -13,7 +13,7 @@ import { spring } from "react-flip-toolkit";
 // import styled from 'styled-components';
 import { useSpring, animated } from "react-spring";
 import * as Icon from "react-bootstrap-icons";
-import { Tooltip, IconButton } from "@material-ui/core";
+import { Tooltip } from "@material-ui/core";
 
 export default function Portfolio() {
   const projectsRef = useRef(null);
@@ -138,7 +138,6 @@ export default function Portfolio() {
             <Icon.ChevronRight viewBox="0.5 1 16 16" />
           </a>
         </h4>
-        <h4></h4>
       </div>
 
       <div className="projects" ref={projectsRef}>
