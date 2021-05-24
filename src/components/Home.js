@@ -58,7 +58,11 @@ export default function Home() {
     <div className="Home">
       <div className="home-lander">
         <img className="mainPhoto" src={me} alt="Chloe" />
-        <h1 className="greeting">HELLO, I'M CHLOE</h1>
+        <div className="greeting">
+        <h1>HELLO, I'M CHLOE</h1>
+        <h4>Full Stack Developer with a passion for the Front-end <br/>+ a respect of the Back-end.</h4>
+        </div>
+
       </div>
       <div className="contentBeforeProjectGrid" />
 
@@ -66,10 +70,12 @@ export default function Home() {
       <div className="projectPreview" > 
         <div className="homeProjects">
         <PopoutCard>
-          <Card className="homeProjectOne"style={{ width: '12rem', height: '12rem'}}>
+          <Card className="homeProjectOne"style={{ width: '13rem', height: '12rem'}}>
             <Card.Body>
-              <Card.Title>Project 1</Card.Title>
-              <Card.Text>Languages</Card.Text>
+              <Card.Title>FRONT END</Card.Title>
+              <Card.Text>
+                <p>JavaScript<br/>React / Redux<br />HTML / CSS</p>
+              </Card.Text>
             </Card.Body>
           </Card>
         </PopoutCard>
@@ -81,30 +87,36 @@ export default function Home() {
 
         <div className="homeProjects">
         <PopoutCard>
-          <Card className="homeProjectTwo"style={{ width: '12rem', height: '12rem'}}>
+          <Card className="homeProjectTwo"style={{ width: '13rem', height: '12rem'}}>
             <Card.Body>
-              <Card.Title>Project 1</Card.Title>
-              <Card.Text>Languages</Card.Text>
+              <Card.Title>BACK END</Card.Title>
+              <Card.Text>
+                <p>Node.js<br/>C# / .NET<br />AWS<br/>CLI</p>
+              </Card.Text>
             </Card.Body>
           </Card>
           </PopoutCard>
         </div>
         <div className="homeProjects">
         <PopoutCard>
-          <Card className="homeProjectThree"style={{ width: '12rem', height: '12rem'}}>
+          <Card className="homeProjectThree"style={{ width: '13rem', height: '12rem'}}>
             <Card.Body>
-              <Card.Title>Project 1</Card.Title>
-              <Card.Text>Languages</Card.Text>
+              <Card.Title>TOOLS</Card.Title>
+              <Card.Text>
+                <p>NPM<br/>TDD / Jest<br />GitHub<br/>Netlify<br/>Visual Studio</p>
+              </Card.Text>
             </Card.Body>
           </Card>
         </PopoutCard>
         </div>
         <div className="homeProjects">
         <PopoutCard>
-          <Card className="homeProjectFour"style={{ width: '12rem', height: '12rem'}}>
+          <Card className="homeProjectFour"style={{ width: '13rem', height: '12rem'}}>
             <Card.Body>
-              <Card.Title>Project 1</Card.Title>
-              <Card.Text>Languages</Card.Text>
+              <Card.Title>OTHER</Card.Title>
+              <Card.Text>
+                <p>MySQL<br/>Firebase / Firestore<br/>REST API's<br/>Responsive Design<br/>Agile</p>
+              </Card.Text>
             </Card.Body>
           </Card>
         </PopoutCard>
@@ -127,11 +139,11 @@ export default function Home() {
         </div>
         <div className="resume"> 
           <div className="resumeContents">
-            <p>Hi there</p>
+            {/* <p>Hi there</p> */}
           </div>
           <Nav activeKey={window.location.pathname}>
             <LinkContainer to="/about">
-              <Nav.Link className="resumeLink"><h4>RESUME<Icon.ChevronRight viewBox="0.5 1 16 16"/></h4></Nav.Link>
+              <Nav.Link className="resumeLink"><h4><a href="https://www.dropbox.com/s/75i6ntyu7utgrzt/Resume.pdf?dl=0" target="_blank" rel="noopener noreferrer">RESUME<Icon.ChevronRight viewBox="0.5 1 16 16"/></a></h4></Nav.Link>
             </LinkContainer>
           </Nav> 
         </div>

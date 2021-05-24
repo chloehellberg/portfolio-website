@@ -1,8 +1,6 @@
 @media all and (min-width: 480px) {
-
   .aboutPageVideo {
-
-    overflow-x: hidden; 
+    overflow-x: hidden;
     overflow-y: hidden;
     position: fixed;
     z-index: -1;
@@ -14,12 +12,33 @@
     grid-template-rows: 1fr;
     text-align: center;
     box-sizing: border-box;
-    color : rgb(255, 255, 255);
-  } 
+    color: rgb(255, 255, 255);
+  }
+  .titleAboutContainer {
+    padding-bottom: 40px;
+  }
+
+  .aboutTitle {
+    font-size: 70px;
+    color: #a3bcb6;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+  }
+
+  .bulkAboutContainer {
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 40px;
+  }
+
+  .aboutParagraph {
+    line-height: 1.6;
+    font-size: 30px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+  }
 
   .addAboutSpace {
     height: 200px;
-  } 
-
+  }
 }
-
