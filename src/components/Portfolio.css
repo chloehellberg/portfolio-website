@@ -12,12 +12,18 @@
     /* margin: 50px; */
     padding-left: 50px;
     color: #f8f8ff;
+    text-align: center;
   }
 
   .mainPortfolio {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     margin-left: 50px;
+    text-align: center;
+  }
+
+  .projectGitHub {
+    color: #a3bcb6;
   }
 
   .projects {
@@ -107,36 +113,4 @@
     left: 105%;
     background-color: red;
   }
-
-  /* .card back {
-    background-image: url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i&auto=format&fit=crop);
-
-  } */
 }
-
-/* .projects--full {
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 200px;
-    grid-gap: 10px;
-  }
-
-  .projects--big-columns {
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  }
-
-  .projects--big-gap {
-    grid-gap: 2.5rem;
-  } */
-
-/* .card--expanded {
-    grid-column: span 3;
-    grid-row: span 3;
-  }
-  
-  .button:hover {
-    background-color: hsla(0, 0%, 83%, 0.05);
-  }
-  button:focus {
-    box-shadow: 0 0 0 3px #7396e4;
-    outline: none;
-  } */

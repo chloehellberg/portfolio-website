@@ -66,7 +66,7 @@ export default function Portfolio() {
     <div className="portfolio">
       <div className="spaceBeforePortfolio"></div>
       <div className="projectTitle">
-        <h2>PROJECTS</h2>
+        <h1>PROJECTS</h1>
       </div>
       <div className="mainPortfolio">
         <h4>
@@ -74,6 +74,7 @@ export default function Portfolio() {
             href="http://github.com/chloehellberg"
             target="_blank"
             rel="noopener noreferrer"
+            className="projectGitHub"
           >
             See More On GitHub
             <Icon.ChevronRight viewBox="0.5 1 16 16" />

@@ -144,26 +144,59 @@ export default function Home() {
           <Nav activeKey={window.location.pathname}>
             <LinkContainer to="/portfolio">
               <Nav.Link className="homeProjectLink">
-                <h4>
+                <h3>
                   SEE PROJECTS
                   <Icon.ChevronRight viewBox="0.5 1 16 16" />
-                </h4>
+                </h3>
               </Nav.Link>
             </LinkContainer>
           </Nav>
+          <div className="resumeTitle">
+            <h3>
+              <a
+                href="https://www.dropbox.com/s/io92un74jkjys2y/Resume%20-%20Chloe%20Hellberg%20-%20Google%20Docs.pdf?dl=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                RESUME
+                <Icon.ChevronRight viewBox="0.5 1 16 16" />
+              </a>
+            </h3>
+          </div>
+          <div className="toGitHubLink">
+            <h3>
+              <a
+                href="https://github.com/chloehellberg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GITHUB
+                <Icon.ChevronRight viewBox="0.5 1 16 16" />
+              </a>
+            </h3>
+          </div>
         </div>
         <div className="resume">
           <div className="resumeLink"></div>
-          <h4>
-            <a
-              href="https://www.dropbox.com/s/io92un74jkjys2y/Resume%20-%20Chloe%20Hellberg%20-%20Google%20Docs.pdf?dl=0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              RESUME
-              <Icon.ChevronRight viewBox="0.5 1 16 16" />
-            </a>
-          </h4>
+          <div className="education">
+            <h3 className="educationTitle">EDUCATION:</h3>
+            <div className="school">
+              <h6 className="schoolName">EPICODUS</h6>
+              <p className="educationDescription">
+                Portland, OR | Aug 2020 - Feb 2021
+                <br />
+                Web and Mobile Development Certificate
+              </p>
+            </div>
+            <div className="school">
+              <h6 className="schoolName">UNIVERSITY OF OREGON</h6>
+              <p className="educationDescription">
+                Eugene, OR | Sep 2008 - Jun 2012
+                <br />
+                B.A., History of Art and Architecture
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
