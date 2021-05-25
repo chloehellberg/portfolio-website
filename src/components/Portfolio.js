@@ -451,6 +451,23 @@ export default function Portfolio() {
           </PopoutProjectCard>
         </div>
       </div>
+      <div className="homeFooter">
+        <div className="contactInfoAll">
+          <p>
+            <a href="https://www.linkedin.com/in/chloehellberg/">
+              <Icon.Linkedin className="linked" />
+            </a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://github.com/chloehellberg">
+              <Icon.Github className="github" />
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;Email: chloe.hellberg@gmail.com
+          </p>
+        </div>
+        <div className="copyrightName">
+          <p> &copy; Chloe Hellberg 2021</p>
+        </div>
+      </div>
     </div>
   );
 }
