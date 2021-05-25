@@ -89,7 +89,7 @@ export default function Portfolio() {
               <Card style={{ width: "17rem" }}>
                 <Card.Body>
                   <Card.Title>SUGGEST IT TO ME</Card.Title>
-                  <Card.Text>
+                  <Card.Text className="projectText">
                     ReactJS &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       href="https://github.com/chloehellberg/SuggestItToMe"
@@ -141,7 +141,7 @@ export default function Portfolio() {
               <Card style={{ width: "17em" }}>
                 <Card.Body>
                   <Card.Title>RE:SOURCE HUB</Card.Title>
-                  <Card.Text>
+                  <Card.Text className="projectText">
                     ReactJS + AWS &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       href="https://github.com/chloehellberg/resourcehub-react"
@@ -194,7 +194,7 @@ export default function Portfolio() {
               <Card style={{ width: "17rem" }}>
                 <Card.Body>
                   <Card.Title>COUCH POTATO</Card.Title>
-                  <Card.Text>
+                  <Card.Text className="projectText">
                     C#/.NET &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       href="https://github.com/chloehellberg/C-Fitness"
@@ -217,7 +217,7 @@ export default function Portfolio() {
                     <div className="img__description_layer">
                       <p className="img__description">
                         Workout program builder that allows a user to create
-                        custome daily workouts based on their skill level and
+                        custom daily workouts based on their skill level and
                         goals. Various workouts stored in MySQL database.
                         Utilizing RESTful principles.
                       </p>
@@ -234,7 +234,7 @@ export default function Portfolio() {
               <Card style={{ width: "17rem" }}>
                 <Card.Body>
                   <Card.Title>PLANT JOURNAL</Card.Title>
-                  <Card.Text>
+                  <Card.Text className="projectText">
                     JavaScript &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       href="https://github.com/chloehellberg/plant-journal"
@@ -286,7 +286,7 @@ export default function Portfolio() {
               <Card style={{ width: "17rem" }}>
                 <Card.Body>
                   <Card.Title>ANIMAL SHELTER</Card.Title>
-                  <Card.Text>
+                  <Card.Text className="projectText">
                     C#/.NET &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       href="https://github.com/chloehellberg/Animal-Shelter"
@@ -326,7 +326,7 @@ export default function Portfolio() {
               <Card style={{ width: "17rem" }}>
                 <Card.Body>
                   <Card.Title>TAP HOUSE</Card.Title>
-                  <Card.Text>
+                  <Card.Text className="projectText">
                     ReactJS + Redux &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       href="https://github.com/chloehellberg/TapRoomRedux"
@@ -379,7 +379,7 @@ export default function Portfolio() {
               <Card style={{ width: "17rem" }}>
                 <Card.Body>
                   <Card.Title>PIERRE'S BAKERY</Card.Title>
-                  <Card.Text>
+                  <Card.Text className="projectText">
                     C#/.NET &nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       href="https://github.com/chloehellberg/PierresTreats"
@@ -418,7 +418,7 @@ export default function Portfolio() {
               <Card style={{ width: "17rem" }}>
                 <Card.Body>
                   <Card.Title>EXCHANGE RATE</Card.Title>
-                  <Card.Text>
+                  <Card.Text className="projectText">
                     JavaScript + JQuery&nbsp;&nbsp;&nbsp;&nbsp;
                     <a
                       href="https://github.com/chloehellberg/exchange-rate"

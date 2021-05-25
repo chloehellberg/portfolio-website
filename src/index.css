@@ -26,6 +26,18 @@ input[type="file"] {
   background: linear-gradient(90deg, #dfa8a4 30%, white 30%);
   z-index: -2;
 } */
+a {
+  color: #266150;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4d774e;
+}
+
+.Icon {
+  background-size: 10rem 10rem;
+}
 
 .navbar {
   display: grid;

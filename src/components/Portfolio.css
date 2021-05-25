@@ -37,6 +37,11 @@
     grid-auto-flow: dense; */
   }
 
+  .projectText {
+    margin-left: 10px;
+    font-family: "Lato";
+  }
+
   .card-img-top {
     width: 100%;
     height: 100%;
@@ -79,6 +84,7 @@
   .img__description {
     transition: 0.4s;
     transform: translateY(1em);
+    font-family: "Lato";
   }
 
   .img__wrap:hover .img__description {

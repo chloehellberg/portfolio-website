@@ -5,7 +5,6 @@ import me from "./../img/me.jpg";
 import * as Icon from "react-bootstrap-icons";
 import { LinkContainer } from "react-router-bootstrap";
 import Nav from "react-bootstrap/Nav";
-import { useSpring, animated } from "react-spring";
 
 export default function Home() {
   return (

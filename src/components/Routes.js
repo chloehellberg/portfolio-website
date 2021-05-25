@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import Connect from "./Connect";
+// import Connect from "./Connect";
 import Portfolio from "./Portfolio";
 
 export default function Routes() {
