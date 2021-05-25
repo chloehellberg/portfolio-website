@@ -17,9 +17,9 @@ export default function Routes() {
       <Route exact path="/portfolio">
         <Portfolio />
       </Route>
-      <Route exact path="/connect">
+      {/* <Route exact path="/connect">
         <Connect />
-      </Route>
+      </Route> */}
     </Switch>
   );
 }

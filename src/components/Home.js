@@ -5,59 +5,9 @@ import me from "./../img/me.jpg";
 import * as Icon from "react-bootstrap-icons";
 import { LinkContainer } from "react-router-bootstrap";
 import Nav from "react-bootstrap/Nav";
-
-// import { spring } from 'react-flip-toolkit';
 import { useSpring, animated } from "react-spring";
 
 export default function Home() {
-  // const homeProjectsRef = useRef(null);
-
-  // useEffect(() => {
-  //   const homeProjects = [...homeProjectsRef.current.querySelectorAll(".homeProjects")];
-  //   homeProjects.forEach((el, i) => {
-  //     spring({
-  //       config: "wobbly",
-  //       values: {
-  //         translateY: [-15, 0],
-  //         opacity: [0, 1]
-  //       },
-  //       onUpdate: ({ translateY, opacity}) => {
-  //         el.style.opacity = opacity;
-  //         el.style.transform = `translateY(${translateY}px)`;
-  //       },
-  //       delay: i * 25,
-  //       onComplete: () => {
-  //       }
-  //     });
-  //   });
-  // }, []);
-
-  function PopoutCard(props) {
-    const calc = (x, y) => [
-      -(y - window.innerHeight / 2) / 70,
-      (x - window.innerWidth / 2) / 70,
-      1.1,
-    ];
-    const trans = (x, y, s) =>
-      `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
-
-    const [styles, setStyles] = useSpring(() => ({
-      xys: [0, 0, 1],
-      config: { mass: 5, tension: 350, friction: 40 },
-    }));
-    return (
-      <animated.div
-        onMouseMove={({ clientX: x, clientY: y }) =>
-          setStyles({ xys: calc(x, y) })
-        }
-        onMouseLeave={() => setStyles({ xys: [0, 0, 1] })}
-        style={{ transform: styles.xys.interpolate(trans) }}
-      >
-        {props.children}
-      </animated.div>
-    );
-  }
-
   return (
     <div className="Home">
       <div className="home-lander">
@@ -73,101 +23,119 @@ export default function Home() {
       <div className="contentBeforeProjectGrid" />
 
       <div className="projectPreview">
-        <div className="homeProjects">
-          <PopoutCard>
-            <Card
-              className="homeProjectOne"
-              style={{ width: "13rem", height: "12rem" }}
-            >
-              <Card.Body>
-                <Card.Title>FRONT END</Card.Title>
-                <Card.Text>
-                  <p>
-                    JavaScript
-                    <br />
-                    React / Redux
-                    <br />
-                    HTML / CSS
-                  </p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </PopoutCard>
-        </div>
+        <Card
+          className="homeProject"
+          style={{ width: "20rem", height: "37rem" }}
+        >
+          <Card.Body>
+            <Icon.WindowSidebar className="skillsImage" />
+            <Card.Title>FRONT-END</Card.Title>
+            <Card.Text>
+              <p className="skillsText">
+                I value well-written code, thoughful interactions, and bringing
+                ideas to life in the browser.
+              </p>
+              <br />
+              <h6>Languages/Frameworks:</h6>
+              <p className="skillsText">
+                JavaScript
+                <br />
+                React / Redux
+                <br />
+                HTML / CSS
+              </p>
+              <h6>Focus:</h6>
+              <p className="skillsText">
+                REST API's
+                <br />
+                Responsive Design
+                <br />
+                Performance Optimization
+                <br />
+                jQuery
+                <br />
+                OAuth 2.0 + OIDC
+              </p>
+            </Card.Text>
+          </Card.Body>
+        </Card>
 
-        <div className="homeProjects">
-          <PopoutCard>
-            <Card
-              className="homeProjectTwo"
-              style={{ width: "13rem", height: "12rem" }}
-            >
-              <Card.Body>
-                <Card.Title>BACK END</Card.Title>
-                <Card.Text>
-                  <p>
-                    Node.js
-                    <br />
-                    C# / .NET
-                    <br />
-                    AWS
-                    <br />
-                    CLI
-                  </p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </PopoutCard>
-        </div>
-        <div className="homeProjects">
-          <PopoutCard>
-            <Card
-              className="homeProjectThree"
-              style={{ width: "13rem", height: "12rem" }}
-            >
-              <Card.Body>
-                <Card.Title>TOOLS</Card.Title>
-                <Card.Text>
-                  <p>
-                    NPM
-                    <br />
-                    TDD / Jest
-                    <br />
-                    GitHub
-                    <br />
-                    Netlify
-                    <br />
-                    Visual Studio
-                  </p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </PopoutCard>
-        </div>
-        <div className="homeProjects">
-          <PopoutCard>
-            <Card
-              className="homeProjectFour"
-              style={{ width: "13rem", height: "12rem" }}
-            >
-              <Card.Body>
-                <Card.Title>OTHER</Card.Title>
-                <Card.Text>
-                  <p>
-                    MySQL
-                    <br />
-                    Firebase / Firestore
-                    <br />
-                    REST API's
-                    <br />
-                    Responsive Design
-                    <br />
-                    Agile
-                  </p>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </PopoutCard>
-        </div>
+        <Card
+          className="homeProject"
+          style={{ width: "20rem", height: "37rem" }}
+        >
+          <Card.Body>
+            <Icon.CodeSlash className="skillsImage" />
+            <Card.Title>BACK-END</Card.Title>
+            <Card.Text>
+              <p className="skillsText">
+                I work best when I understand how the whole system is operating
+                and am enjoying learning more about the cloud platform.
+              </p>
+              <h6>Languages/Frameworks:</h6>
+              <p className="skillsText">
+                Node.js
+                <br />
+                C# / .NET
+                <br />
+                AWS
+                <br />
+              </p>
+              <h6>Focus:</h6>
+
+              <p className="skillsText">
+                MySQL
+                <br />
+                Firebase / Firestore
+                <br />
+                Object Oriented Programming
+                <br />
+                DynamoDB
+                <br />
+                Cognito
+                <br />
+                Lambda Functions
+                <br />
+                Gateway
+              </p>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card
+          className="homeProject"
+          style={{ width: "20rem", height: "37rem" }}
+        >
+          <Card.Body>
+            <Icon.Lightning className="skillsImage" />
+            <Card.Title>TOOLS</Card.Title>
+            <Card.Text>
+              <p className="skillsText">
+                Bringing it altogether. I love encountering new technologies and
+                using the latest tools to help solve problems.
+              </p>
+              <p className="skillsText">
+                NPM
+                <br />
+                Test Driven Development
+                <br />
+                Jest
+                <br />
+                GitHub
+                <br />
+                Netlify
+                <br />
+                Visual Studio
+                <br />
+                Git
+                <br />
+                Agile
+                <br />
+                CLI
+              </p>
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </div>
 
       <div className="contentBeforeResumeGrid" />
@@ -185,23 +153,17 @@ export default function Home() {
           </Nav>
         </div>
         <div className="resume">
-          <div className="resumeContents">{/* <p>Hi there</p> */}</div>
-          <Nav activeKey={window.location.pathname}>
-            <LinkContainer to="/about">
-              <Nav.Link className="resumeLink">
-                <h4>
-                  <a
-                    href="https://www.dropbox.com/s/75i6ntyu7utgrzt/Resume.pdf?dl=0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    RESUME
-                    <Icon.ChevronRight viewBox="0.5 1 16 16" />
-                  </a>
-                </h4>
-              </Nav.Link>
-            </LinkContainer>
-          </Nav>
+          <div className="resumeLink"></div>
+          <h4>
+            <a
+              href="https://www.dropbox.com/s/io92un74jkjys2y/Resume%20-%20Chloe%20Hellberg%20-%20Google%20Docs.pdf?dl=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RESUME
+              <Icon.ChevronRight viewBox="0.5 1 16 16" />
+            </a>
+          </h4>
         </div>
       </div>
 
@@ -226,20 +188,3 @@ export default function Home() {
     </div>
   );
 }
-
-// <div className="hex">
-// <div className="hexTop"></div>
-// <div className="hexMiddle"></div>
-// <div className="hexBottom"></div>
-// </div>
-// <div className="hex">
-// <div className="hexTop"></div>
-// <div className="hexMiddle"></div>
-// <div className="hexBottom"></div>
-// </div>
-// <div className=".hexRowEven">
-// <div className="hex">
-// <div className="hexTop"></div>
-// <div className="hexMiddle"></div>
-// <div className="hexBottom"></div>
-// </div>

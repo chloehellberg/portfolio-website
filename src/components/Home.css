@@ -16,14 +16,29 @@
     border-bottom: 5px solid;
     border-top: 5px solid;
     border-right: 5px solid;
+    border-color: white;
   }
   .greeting {
     text-align: center;
     margin-top: 30%;
     margin-bottom: 0px !important;
+    color: #f8f8ff;
   }
 
   /* PROJECT CARDS */
+
+  .skillsImage {
+    font-size: 40px;
+    color: #a3bcb6;
+    margin-top: 15px;
+    margin-bottom: 35px;
+  }
+
+  .skillsText {
+    font-size: 16px;
+    font-family: "Lato";
+    font-weight: 500;
+  }
 
   .contentBeforeProjectGrid {
     height: 70px;
@@ -31,55 +46,23 @@
 
   .projectPreview {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    background: linear-gradient(90deg, #a3bcb6 30%, #164a41 30%);
   }
 
-  .homeProjectOne {
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    background-position: center center;
-    transition: box-shadow 0.5s;
-    will-change: transform;
-  }
-
-  .homeProjectOne:hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
-  }
-  .homeProjectTwo {
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    background-position: center center;
-    transition: box-shadow 0.5s;
-    will-change: transform;
-  }
-
-  .homeProjectTwo:hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
-  }
-  .homeProjectThree {
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    background-position: center center;
-    transition: box-shadow 0.5s;
-    will-change: transform;
-  }
-
-  .homeProjectThree:hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
-  }
-  .homeProjectFour {
-    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-    background-position: center center;
-    transition: box-shadow 0.5s;
-    will-change: transform;
-  }
-
-  .homeProjectFour:hover {
-    box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  .homeProject {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #f8f8ff;
+    text-align: center;
   }
 
   /* SEE PROJECTS / RESUME SECTION */
 
   .contentBeforeResumeGrid {
-    height: 70px;
+    height: 100px;
   }
 
   .projectResumeLinks {
