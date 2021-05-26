@@ -24,9 +24,6 @@ function App() {
               <LinkContainer to="/">
                 <Nav.Link className="homeLink">HOME</Nav.Link>
               </LinkContainer>
-              {/* <LinkContainer to="about">
-              <Nav.Link className='aboutLink'>ABOUT</Nav.Link>
-            </LinkContainer> */}
               <LinkContainer to="/portfolio">
                 <Nav.Link className="portfolioLink">PORTFOLIO</Nav.Link>
               </LinkContainer>
@@ -45,22 +42,3 @@ function App() {
 }
 
 export default App;
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <div className="chloegarb">
-//           <h1>CHLOE HELLBERG</h1>
-//       </div>
-//       <div className="navigationLinks">
-//         <Nav>
-//         <Nav.Link to="/">
-//           <li>Home</li>
-//         </Nav.Link>
-//         </Nav>
-//       </div>
-//       <Routes />
-//     </div>
-//   );
-// }
-// export default App;

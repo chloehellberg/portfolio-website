@@ -9,7 +9,6 @@
 
   .projectTitle {
     height: 50px;
-    /* margin: 50px; */
     padding-left: 50px;
     color: #f8f8ff;
     text-align: center;
@@ -17,7 +16,6 @@
 
   .mainPortfolio {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     margin-left: 50px;
     text-align: center;
   }
@@ -30,11 +28,6 @@
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;
     grid-template-rows: 2fr 2fr;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-template-rows: 20rem;
-    grid-gap: 50px;
-    grid-auto-flow: dense; */
   }
 
   .projectText {
@@ -48,10 +41,6 @@
     border-radius: 0px;
     transition: transform 1s;
   }
-
-  /* .card-img-top:hover {
-    opacity: 0.2;
-  } */
 
   .img__wrap {
     position: relative;

@@ -12,11 +12,12 @@ export default function Home() {
       <div className="home-lander">
         <img className="mainPhoto" src={me} alt="Chloe" />
         <div className="greeting">
-          <h1>HELLO, I'M CHLOE</h1>
-          <h4>
-            Full Stack Developer with a passion for the Front-end <br />+ a
-            respect of the Back-end.
-          </h4>
+          <h2 className="greetingName">Hi, I'm Chloe. Nice to meet you.</h2>
+          <h5 className="greetingSentence">
+            I'm a Full Stack Developer with a passion for the Front-End and a
+            respect for the Back-End. Inquisitive + Curious - I'm always on the
+            lookout for new and interesting things.
+          </h5>
         </div>
       </div>
       <div className="contentBeforeProjectGrid" />
